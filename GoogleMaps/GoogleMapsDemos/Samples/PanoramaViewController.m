@@ -38,6 +38,8 @@ static CLLocationCoordinate2D kMarkerAt = {40.761455, -73.977814};
 
   _view = [GMSPanoramaView panoramaWithFrame:CGRectZero
                               nearCoordinate:kPanoramaNear];
+    _view.streetNamesHidden = YES;
+    _view.navigationLinksHidden = YES;
   _view.backgroundColor = [UIColor grayColor];
   _view.delegate = self;
   self.view = _view;
